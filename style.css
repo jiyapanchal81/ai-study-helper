@@ -1,0 +1,140 @@
+/* ===== Reset and base styles ===== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #1f2937;
+    line-height: 1.5;
+    padding: 24px;
+}
+/* ===== Layout ===== */
+
+header, main, footer {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #6b7280;
+}
+
+main {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+#input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#output-section {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e7eb;
+}
+
+footer {
+    text-align: center;
+    margin-top: 32px;
+    color: #6b7280;
+    font-size: 14px;
+}
+/* ===== Form elements ===== */
+
+label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #374151;
+}
+
+textarea, input[type="number"] {
+    font-family: inherit;
+    font-size: 16px;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #1f2937;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 160px;
+}
+
+textarea:focus, input[type="number"]:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+button {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 20px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+button:active {
+    background-color: #1e40af;
+}
+
+button:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+}
+
+#status {
+    color: #6b7280;
+    font-size: 14px;
+}
+/* ===== Responsive (mobile) ===== */
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    main {
+        padding: 16px;
+    }
+
+    button {
+        padding: 14px 20px;
+    }
+}
